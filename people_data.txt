@@ -1,0 +1,10 @@
+Lizzy,Borden,25,New York
+Casey,Hill,35,Portland
+Anna,Johnson,22,Chicago
+Chris,Davis,27,Houston
+Elizabeth,Taylor,29,San Francisco
+Clark,Kent,35,Miami
+Emily,Adams,24,Seattle
+James,Williams,28,Boston
+Sophia,Lee,26,Denver
+Michael,Martinez,31,Atlanta
