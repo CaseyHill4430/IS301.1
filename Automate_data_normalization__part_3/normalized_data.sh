@@ -1,12 +1,11 @@
 #!/bin/bash
-# Author: [Your Full Name]
-# Script to normalize semi-structured scraped data into a CSV format saved as a .txt file.
+# Casey Hill
 
 # Input and output file names
 INPUT_FILE="mdpiPubs.txt"
 OUTPUT_FILE="normalized_data.csv"
 
-# Create the header for the .txt file (in CSV format)
+# Create headers
 echo "Tag,Category,Title,Authors,DOI,Date" > "$OUTPUT_FILE"
 
 # Process the input file line by line
