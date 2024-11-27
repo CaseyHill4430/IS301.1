@@ -17,8 +17,12 @@ build: $(SOLUTION_SCRIPT) $(SAMPLE_INPUT) $(README)
 deploy: build
 	@echo "Deploying package to repository..."
 	git add $(DEPLOY_ZIP)
-	git commit -m "Deploy solution package $(DEPLOY_ZIP)"
-	git push
+	@if git diff-index --quiet HEAD --; then \
+		echo "Nothing to commit. Working tree clean."; \
+	else \
+		git commit -m "Deploy solution package $(DEPLOY_ZIP)"; \
+		git push; \
+	fi
 	@echo "Package deployed to repository."
 
 $(README):
